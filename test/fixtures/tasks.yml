@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dexcription: MyText
+  position: 1
+  completed: false
+
+two:
+  name: MyString
+  dexcription: MyText
+  position: 1
+  completed: false
