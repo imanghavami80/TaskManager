@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   match 'about', to: 'main#about', via: :get
 
   get 'tasks/index'
+  # match 'tasks/index', to: 'tasks#index', via: :get
   get 'tasks/show'
   get 'tasks/new'
   get 'tasks/edit'

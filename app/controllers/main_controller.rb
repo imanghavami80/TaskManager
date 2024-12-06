@@ -1,5 +1,6 @@
 class MainController < ApplicationController
   def index
+    @app_name = "Task Manager"
   end
 
   def about
