@@ -13,3 +13,121 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    text-align: center;
+}
+
+.back-link {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+}
+.back-link:hover {
+    color: #0056b3;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+nav a:hover {
+    background-color: #0056b3;
+}
+
+.tasks {
+    margin-top: 20px;
+}
+
+.action {
+    display: inline-block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.new {
+    background-color: #28a745;
+}
+.new:hover {
+    background-color: #218636;
+}
+
+.show {
+    background-color: #17a2b8;
+}
+.show:hover {
+    background-color: #138496;
+}
+
+.edit {
+    background-color: #ffc107;
+}
+.edit:hover {
+    background-color: #cea207;
+}
+
+.delete {
+    background-color: #dc3545;
+}
+.delete:hover {
+    background-color: #bd2e3c;
+}
+
+.listing {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.listing th, .listing td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.listing th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.listing tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

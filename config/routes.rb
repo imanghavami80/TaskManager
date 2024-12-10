@@ -3,18 +3,17 @@ Rails.application.routes.draw do
 
   match 'about', to: 'main#about', via: :get
 
-  get 'tasks/index'
-  # match 'tasks/index', to: 'tasks#index', via: :get
-  get 'tasks/show'
-  get 'tasks/new'
-  get 'tasks/edit'
-  get 'tasks/delete'
+  resources :tasks do
+    member do
+      get :delete
+    end
+  end
 
-  get 'categories/index'
-  get 'categories/show'
-  get 'categories/new'
-  get 'categories/edit'
-  get 'categories/delete'
+  resources :categories do
+    member do
+      get :delete
+    end
+  end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
